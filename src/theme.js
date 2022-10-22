@@ -202,7 +202,7 @@ export const themSetting = (mode) =>{
 // context for color mode
 
     export const ColorModeContext = createContext({
-        toggleColoreMode: () => {}
+        toggleColorMode: () => {}
     });
 
     export const useMode = () =>{
@@ -210,7 +210,7 @@ export const themSetting = (mode) =>{
 
         const colorMode = useMemo (
             () =>({
-                toggleColoreMode: () =>
+                toggleColorMode: () =>
                   setMode((prev) => (prev === "light" ? "dark": "light")) 
             }),
             []
