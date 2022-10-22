@@ -15,11 +15,15 @@ const Topbar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
-  
 
-  return (
-    <div>Topbar</div>
-  )
+
+  return <Box display= "flex" justifyContent="space-between" p={2}>
+
+
+    <IconButton sx={{display:"flex"}}></IconButton>
+  </Box>
+    
+  
 }
 
 export default Topbar
