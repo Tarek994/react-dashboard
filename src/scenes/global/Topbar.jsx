@@ -33,7 +33,22 @@ const Topbar = () => {
 
 
     {/* ICONS */}
-    
+      <Box display="flex">
+        <IconButton>
+          
+        </IconButton>
+        <IconButton>
+          
+        </IconButton>
+        <IconButton>
+          
+        </IconButton>
+        <IconButton>
+          
+        </IconButton>
+
+
+      </Box>
     </Box>
     
   );
