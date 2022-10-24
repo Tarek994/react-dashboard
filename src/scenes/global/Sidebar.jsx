@@ -87,8 +87,14 @@ const Sidebar = () => {
                 </Box>
 
                 <Box textAlign="center">
-                  <Typography variant="h2" color={colors.gray[100]}>Tarek Ghali</Typography>
-                  <Typography>VP Fancy Admin </Typography>
+                  <Typography variant="h2"
+                   color={colors.gray[100]}
+                    fontWeight="bold"
+                     sx={{m: "10px 0 0 0 "}}>
+                      Tarek Ghali
+                      </Typography>
+
+                  <Typography variant="h5" color={colors.greenAccent[500]}>VP Fancy Admin </Typography>
                 </Box>
               </Box>
             )}
