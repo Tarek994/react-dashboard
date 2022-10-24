@@ -17,6 +17,7 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import { borderRadius } from "@mui/system";
 
 
 
@@ -75,9 +76,14 @@ const Sidebar = () => {
           </MenuItem>
             {/* USER */}
             {!isCollapsed && (
-              <Box>
-                <Box>
-                  <img alt=""/>
+              <Box mb="25px">
+                <Box display="flex" justifyContent="center" alignItems="center">
+                  <img alt="profile-user"
+                  width="100px"
+                  height="100px"
+                  src={`../../assets/user.png`}
+                  style={{cursor:"pointer", borderRadius="50%" }}
+                  />
                 </Box>
                 <Box>
                   <Typography>Tarek Ghali</Typography>
