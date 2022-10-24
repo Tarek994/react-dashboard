@@ -73,8 +73,18 @@ const Sidebar = () => {
               </Box>
             )}
           </MenuItem>
-            
-            
+            {/* USER */}
+            {!isCollapsed && (
+              <Box>
+                <Box>
+                  <img alt=""/>
+                </Box>
+                <Box>
+                  <Typography>Tarek Ghali</Typography>
+                  <Typography>VP Fancy Admin </Typography>
+                </Box>
+              </Box>
+            )}
 
           </Menu>
       </ProSidebar>
