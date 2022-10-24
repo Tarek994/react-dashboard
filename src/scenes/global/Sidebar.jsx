@@ -85,8 +85,9 @@ const Sidebar = () => {
                   style={{cursor:"pointer", borderRadius:"50%" }}
                   />
                 </Box>
-                <Box>
-                  <Typography>Tarek Ghali</Typography>
+
+                <Box textAlign="center">
+                  <Typography variant="h2" color={colors.gray[100]}>Tarek Ghali</Typography>
                   <Typography>VP Fancy Admin </Typography>
                 </Box>
               </Box>
