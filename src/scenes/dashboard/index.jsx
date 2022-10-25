@@ -1,9 +1,12 @@
+import Header from "../../components/Header";
 
 
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div>
+      <Header/>
+      </div>
   )
 }
 
