@@ -9,8 +9,18 @@ import  Header from "../../components/Header"
 
 
 const Team = () => {
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mod);
+
   return (
-    <div>index</div>
+    <Box>
+      <Header
+      title="TEAM"
+      subtitle="Managing the Team Members" />
+      <Box>
+        <DataGrid/>
+      </Box>
+    </Box>
   )
 }
 
