@@ -123,62 +123,70 @@ const Sidebar = () => {
                 setSelected={setSelected}
                 />
                     <Item
-                title="Dashboard"
-                to="/"
-                icon={<HomeOutlinedIcon/>}
+                title="Manage Team"
+                to="/team"
+                icon={<PeopleOutlinedIcon/>}
                 selected={selected}
                 setSelected={setSelected}
                 />
                     <Item
-                title="Dashboard"
-                to="/"
-                icon={<HomeOutlinedIcon/>}
+                title="Contacts Information"
+                to="/contacts"
+                icon={<ContactsOutlinedIcon/>}
                 selected={selected}
                 setSelected={setSelected}
                 />
                     
                 <Item
-                title="Dashboard"
-                to="/"
-                icon={<HomeOutlinedIcon/>}
+                title="Invoices Balances"
+                to="/invoices"
+                icon={<ReceiptOutlinedIcon/>}
                 selected={selected}
                 setSelected={setSelected}
                 />
                 <Item
-                title="Dashboard"
-                to="/"
-                icon={<HomeOutlinedIcon/>}
+                title="Profile Form"
+                to="/form"
+                icon={<PersonOutlinedIcon/>}
                 selected={selected}
                 setSelected={setSelected}
                 />
                 <Item
-                title="Dashboard"
-                to="/"
-                icon={<HomeOutlinedIcon/>}
+                title="Calendar"
+                to="/calendar"
+                icon={<CalendarTodayOutlinedIcon/>}
                 selected={selected}
                 setSelected={setSelected}
                 />
                 <Item
-                title="Dashboard"
-                to="/"
-                icon={<HomeOutlinedIcon/>}
+                title="FAQ"
+                to="/faq"
+                icon={<HelpOutlinedIcon/>}
                 selected={selected}
                 setSelected={setSelected}
                 />
                 <Item
-                title="Dashboard"
-                to="/"
-                icon={<HomeOutlinedIcon/>}
+                title="Bar Chart"
+                to="/bar"
+                icon={<BarChartOutlinedIcon/>}
                 selected={selected}
                 setSelected={setSelected}
                 />
                 <Item
-                title="Dashboard"
-                to="/"
-                icon={<HomeOutlinedIcon/>}
+                title="Pie Chart"
+                to="/pie"
+                icon={<PieChartOutlineOutlinedIcon/>}
                 selected={selected}
                 setSelected={setSelected}
                 />
+                <Item
+                title="Line Chart"
+                to="/line"
+                icon={<TimelineOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                
                 
                 
             </Box>
