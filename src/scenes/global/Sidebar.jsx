@@ -19,7 +19,20 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import { borderRadius } from "@mui/system";
 
-
+const Item = ({title, to, icon, selected, setSelected}) =>{
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+  return (
+    <MenuItem active={selected === title}
+     style={{color: colors.gray[100]}}
+     onClick={(()=> setSelected(title) )}
+     icon={icon}
+     >
+     <Typography>{title}</Typography>
+     <Link to={to}/>
+    </MenuItem>
+  )
+}
 
 const Sidebar = () => {
   const theme = useTheme();
@@ -78,11 +91,12 @@ const Sidebar = () => {
             {!isCollapsed && (
               <Box mb="25px">
                 <Box display="flex" justifyContent="center" alignItems="center">
-                  <img alt="profile-user"
-                  width="100px"
-                  height="100px"
-                  src={`../../assets/user.png`}
-                  style={{cursor:"pointer", borderRadius:"50%" }}
+                  <img
+                    alt="profile-user"
+                    width="100px"
+                    height="100px"
+                    src={`../../assets/user.png`}
+                    style={{cursor:"pointer", borderRadius:"50%" }}
                   />
                 </Box>
 
@@ -98,6 +112,76 @@ const Sidebar = () => {
                 </Box>
               </Box>
             )}
+
+            {/* MENU ITEMS */}
+            <Box paddingLeft={!isCollapsed ?  undefined : "10%"}>
+                <Item
+                title="Dashboard"
+                to="/"
+                icon={<HomeOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                    <Item
+                title="Dashboard"
+                to="/"
+                icon={<HomeOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                    <Item
+                title="Dashboard"
+                to="/"
+                icon={<HomeOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                    
+                <Item
+                title="Dashboard"
+                to="/"
+                icon={<HomeOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                <Item
+                title="Dashboard"
+                to="/"
+                icon={<HomeOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                <Item
+                title="Dashboard"
+                to="/"
+                icon={<HomeOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                <Item
+                title="Dashboard"
+                to="/"
+                icon={<HomeOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                <Item
+                title="Dashboard"
+                to="/"
+                icon={<HomeOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                <Item
+                title="Dashboard"
+                to="/"
+                icon={<HomeOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                
+                
+            </Box>
 
           </Menu>
       </ProSidebar>
