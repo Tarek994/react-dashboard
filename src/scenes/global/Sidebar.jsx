@@ -4,7 +4,6 @@ import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography,useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../theme";
-
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
@@ -17,13 +16,15 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import { borderRadius } from "@mui/system";
+
+
 
 const Item = ({title, to, icon, selected, setSelected}) =>{
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
-    <MenuItem active={selected === title}
+    <MenuItem
+     active={selected === title}
      style={{color: colors.gray[100]}}
      onClick={(()=> setSelected(title) )}
      icon={icon}
@@ -57,7 +58,7 @@ const Sidebar = () => {
         },
         "& .pro-menu-item.active":{
           color:"#6870fa !important",
-        }
+        },
       }}
     >
        <ProSidebar collapsed={isCollapsed}>
@@ -71,18 +72,18 @@ const Sidebar = () => {
             color: colors.gray[100],
           }}
           >
-            {isCollapsed &&(
+            {!isCollapsed &&(
               <Box
-              display="flex"
-              justifyContent="space-between"
-              alignItems="center"
-              ml="15px"
+                display="flex"
+                justifyContent="space-between"
+                alignItems="center"
+                ml="15px"
               >
                 <Typography variant="h3" color={colors.gray[100]}>
                   ADMINIS
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(isCollapsed)}>
-                <MenuOutlinedIcon/>
+                  <MenuOutlinedIcon/>
                 </IconButton>
               </Box>
             )}
@@ -96,7 +97,7 @@ const Sidebar = () => {
                     width="100px"
                     height="100px"
                     src={`../../assets/user.png`}
-                    style={{cursor:"pointer", borderRadius:"50%" }}
+                    style={{cursor:"pointer", borderRadius : "50%" }}
                   />
                 </Box>
 
@@ -104,7 +105,8 @@ const Sidebar = () => {
                   <Typography variant="h2"
                    color={colors.gray[100]}
                     fontWeight="bold"
-                     sx={{m: "10px 0 0 0 "}}>
+                     sx={{m: "10px 0 0 0 "}}
+                     >
                       Tarek Ghali
                       </Typography>
 
@@ -183,6 +185,13 @@ const Sidebar = () => {
                 title="Line Chart"
                 to="/line"
                 icon={<TimelineOutlinedIcon/>}
+                selected={selected}
+                setSelected={setSelected}
+                />
+                <Item
+                title="Geography Chart"
+                to="/geography"
+                icon={<MapOutlinedIcon/>}
                 selected={selected}
                 setSelected={setSelected}
                 />
