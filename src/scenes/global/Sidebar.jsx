@@ -51,10 +51,10 @@ const Sidebar = () => {
           backgroundColor :"transparent !important",
         },
         "& .pro-inner-item":{
-          padding: "5px 35px 5px 20 !important " ,
+          padding: "5px 35px 5px 20 !important ",
         },
         "& .pro-inner-item:hover":{
-          color: " #868dfb !mportant "  ,
+          color: " #868dfb !mportant ",
         },
         "& .pro-menu-item.active":{
           color:"#6870fa !important",
