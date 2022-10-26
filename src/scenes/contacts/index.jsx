@@ -1,7 +1,7 @@
 import  {Box, useTheme} from "@mui/material";
 import  { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import  {tokens} from "../../theme";
-import  {mockDataContacts, mockDataTeam} from "../../data/mocData";
+import  {mockDataContacts} from "../../data/mocData";
 import  Header from "../../components/Header"
 
 
@@ -69,15 +69,14 @@ const Team = () => {
         },
         "& .MuiDataGrid-toolbarContainer .MuiButton-text":{
             color: `${colors.gray[100]} !important`,
-            backgroundColor: colors.blueAccent[700],
           },
       }}>
        
         <DataGrid
-          rows={mockDataTeam}
+          rows={mockDataContacts}
           columns={columns}
-          components={{Toolbar:GridToolbar}}
-          
+          components={{Toolbar: GridToolbar}}
+
         />
       </Box>
     </Box>
