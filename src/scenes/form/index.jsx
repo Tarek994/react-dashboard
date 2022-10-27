@@ -19,8 +19,11 @@ const phoneRegExp =
 const userSchema = yup.object().shape({
     firstName:yup.string().required("required"),
     lastName:yup.string().required("required"),
-    email:yup.string().required("required"),
-    contact:yup.string().required("required"),
+    email:yup.string().email("invalid email").required("required"),
+    contact:yup
+    .string()
+    .matches(phoneRegExp,"Phone number is not valid")
+    .required("required"),
     address1:yup.string().required("required"),
     address2:yup.string().required("required"),
 
@@ -44,7 +47,28 @@ const Form = () =>{
             onSubmit={handleFormSubmit}
             initialValues={initialValues}
             validationSchema={userSchema}
-         ></Formik>        
+         >
+            {({values, errors, touched, handleBlur, handleChange, handleSubmit}) =>(
+
+                 <form onSubmit={handleSubmit}>
+                    
+                    
+                </form>
+                 
+                 )} 
+
+               
+            
+
+                
+           
+                
+
+
+               
+
+            
+            </Formik>        
     </Box>
 
     )
