@@ -4,6 +4,18 @@ import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "../../components/Header";
 
+const initialValues = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    contact: "",
+    address1: "",
+    address2: "",
+
+
+}
+
+
 
 const Form = () =>{
     const isNonMobile = useMediaQuery("min-width:600px");
@@ -16,8 +28,11 @@ const Form = () =>{
     <Box m="20px">
         <Header title="CREATE USER"
          subtitle="Create a new user Profile"/>
-
-         <Formik></Formik>        
+                
+         <Formik
+            onSubmit={handleFormSubmit}
+            initialValues={initialValues}
+         ></Formik>        
     </Box>
 
     )
