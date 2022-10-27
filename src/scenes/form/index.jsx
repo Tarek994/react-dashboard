@@ -14,7 +14,13 @@ const initialValues = {
 };
 
 const userSchema = yup.object().shape({
-    firstName:yup.string().required("required")
+    firstName:yup.string().required("required"),
+    lastName:yup.string().required("required"),
+    email:yup.string().required("required"),
+    contact:yup.string().required("required"),
+    address1:yup.string().required("required"),
+    address2:yup.string().required("required"),
+
 })
 
 
