@@ -11,9 +11,11 @@ const initialValues = {
     contact: "",
     address1: "",
     address2: "",
+};
 
-
-}
+const userSchema = yup.object().shape({
+    
+})
 
 
 
@@ -32,6 +34,7 @@ const Form = () =>{
          <Formik
             onSubmit={handleFormSubmit}
             initialValues={initialValues}
+            validationSchema={userSchema}
          ></Formik>        
     </Box>
 
