@@ -57,16 +57,6 @@ const Form = () =>{
                  
                  )} 
 
-               
-            
-
-                
-           
-                
-
-
-               
-
             
             </Formik>        
     </Box>
