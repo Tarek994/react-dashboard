@@ -14,7 +14,7 @@ const initialValues = {
 };
 
 const userSchema = yup.object().shape({
-    
+    firstName:yup.string().required("required")
 })
 
 
