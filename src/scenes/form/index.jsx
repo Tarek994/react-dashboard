@@ -51,7 +51,10 @@ const Form = () =>{
             {({values, errors, touched, handleBlur, handleChange, handleSubmit}) =>(
 
                  <form onSubmit={handleSubmit}>
-                    
+                    <Box display="grid" gap="30px">
+                        
+
+                    </Box>
                     
                 </form>
                  
