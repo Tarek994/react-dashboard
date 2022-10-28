@@ -51,8 +51,13 @@ const Form = () =>{
             {({values, errors, touched, handleBlur, handleChange, handleSubmit}) =>(
 
                  <form onSubmit={handleSubmit}>
-                    <Box display="grid" gap="30px">
-                        
+                    <Box display="grid" gap="30px"
+                     gridTemplateColumns="repeat(4, minmax(0, 1fr))"
+                     sx={{
+                        "& > div ": {gridColumn : isNonMobile ? undefined : "span 4 "}
+                     }}
+                     >
+
 
                     </Box>
                     
