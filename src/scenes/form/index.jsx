@@ -103,14 +103,14 @@ const Form = () =>{
                     fullWidth
                     variant="filled"
                     type="text"
-                    label="First Name"
+                    label="Contact Number"
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    value={values.firstName}
-                    name="firstName"
-                    error={!!touched.firstName && !!errors.firstName}
-                    helperText={touched.firstName && errors.firstName}
-                    sx={{gridColumn: " span 2" }}
+                    value={values.contact}
+                    name="contact"
+                    error={!!touched.contact && !!errors.contact}
+                    helperText={touched.contact && errors.contact}
+                    sx={{gridColumn: " span 4" }}
 
                     />
                         <TextField 
