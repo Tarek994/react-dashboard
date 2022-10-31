@@ -49,8 +49,20 @@ const Calendar = () => {
 
           <Box dispaly="flex" justifyContent="space-between">
             {/* CALENDAR SIDEBAR */}
-            <Box flex="1 1 20%" backgroundColor={colors.primary[400]}>
-
+            <Box
+             flex="1 1 20%" 
+             backgroundColor={colors.primary[400]}
+             p="15px" borderRadius="4px"
+             >
+              <Typography variant="h5">Events</Typography>
+              <List>
+                {currentEvents.map((event)=>(
+                    <ListItem
+                    key={event.id}
+                    sx={{backgroundColor: colors.greenAccent[500] }}
+                    ></ListItem>
+                ))}
+              </List>
             </Box>
           </Box>
         </Box>
