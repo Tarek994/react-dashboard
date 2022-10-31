@@ -4,14 +4,9 @@ import dayGridPlugin from "@fullcalendar/daygrid"
 import timeGridPlugin from "@fullcalendar/timegrid"
 import { InteractionPlugin } from "@fullcalendar/interaction"
 import listPlugin from "@fullcalendar/list"
-import{
- Box,
- List,
- ListItem,
- ListItemText,
- Typography,
- useTheme,
-}from " @mui/material";
+
+import { Box,List, ListItem, ListItemText,Typography,useTheme } from "@mui/material"
+
 import Header from "../../components/Header";
 import { tokens } from "../../theme"
 
