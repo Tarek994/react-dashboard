@@ -20,8 +20,21 @@ const Calendar = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     const [currentEvents, setCurrentEvents] = useState([]);
+    
     const handleDateClick = (selected) => {
-        const title = prompt("Pleas enter a new title for your event")
-    }
-}
+        const title = prompt("Pleas enter a new title for your event");
+        const calendarApi = selected.view.calendar;
+        calendarApi.unselect();
+
+        if(title) {
+             calendarApi.addEvent({
+                id: `${selected.dateStr} -${title}`,
+                title,
+                start:selected.startStrr,
+                end: selected.endStr,
+                allDay: selected.allDay
+             });
+        }
+    };
+};
 export default Calendar;
