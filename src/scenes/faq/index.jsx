@@ -20,7 +20,7 @@ const FAQ = () => {
         <Accordion>
             <AccordionSummary expandIcon={ExpandMoreIcon}>
                 <Typography color={colors.greenAccent[500]} variant="h5">
-                    An Importan question
+                    An Important question
                 </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -36,7 +36,7 @@ const FAQ = () => {
         <Accordion>
             <AccordionSummary expandIcon={ExpandMoreIcon}>
                 <Typography color={colors.greenAccent[500]} variant="h5">
-                    An Importan question
+                    An Important question
                 </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -52,7 +52,7 @@ const FAQ = () => {
         <Accordion>
             <AccordionSummary expandIcon={ExpandMoreIcon}>
                 <Typography color={colors.greenAccent[500]} variant="h5">
-                    An Importan question
+                    An Important question
                 </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -68,7 +68,7 @@ const FAQ = () => {
         <Accordion>
             <AccordionSummary expandIcon={ExpandMoreIcon}>
                 <Typography color={colors.greenAccent[500]} variant="h5">
-                    An Importan question
+                    An Important question
                 </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -84,7 +84,7 @@ const FAQ = () => {
         <Accordion>
             <AccordionSummary expandIcon={ExpandMoreIcon}>
                 <Typography color={colors.greenAccent[500]} variant="h5">
-                    An Importan question
+                    An Important question
                 </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -100,7 +100,7 @@ const FAQ = () => {
         <Accordion>
             <AccordionSummary expandIcon={ExpandMoreIcon}>
                 <Typography color={colors.greenAccent[500]} variant="h5">
-                    An Importan question
+                    An Important question
                 </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -112,7 +112,7 @@ const FAQ = () => {
                 </Typography>
             </AccordionDetails>
         </Accordion>
-        
+
     </Box>
   )
 }
