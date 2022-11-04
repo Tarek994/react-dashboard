@@ -1,9 +1,13 @@
+import { useTheme } from "@mui/material";
 import { ResponsiveLine } from "@nivo/line";
 import { mockLineData as data } from "../data/mocData";
 import { tokens } from "../theme";
 
 
 const LineChart = () => {
+    const theme = useTheme();
+    const colors = tokens(theme.palette.mode)
+
   return (
     <ResponsiveLine
         data={data}
@@ -76,4 +80,4 @@ const LineChart = () => {
   )
 }
 
-export default LineChart
+export default LineChart;
