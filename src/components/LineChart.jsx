@@ -4,7 +4,7 @@ import { mockLineData as data } from "../data/mocData";
 import { tokens } from "../theme";
 
 
-const LineChart = () => {
+const LineChart = ({isDashboard = false}) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 
@@ -44,6 +44,7 @@ const LineChart = () => {
               },
             },
           }}
+        colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
         xScale={{ type: 'point' }}
         yScale={{
@@ -62,16 +63,17 @@ const LineChart = () => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'transportation',
+            legend: isDashboard ? undefined : "transportation", //added
             legendOffset: 36,
             legendPosition: 'middle'
         }}
         axisLeft={{
             orient: 'left',
+            tickValues: 5, // added
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'count',
+            legend: isDashboard ? undefined : "count", // added
             legendOffset: -40,
             legendPosition: 'middle'
         }}
