@@ -6,6 +6,8 @@ import { mockGeographyData as data } from "../data/mockData";
 
 
 const GeographyChart = () => {
+    const theme = useTheme();
+    const colors = tokens(theme.palette.mode);
     
     return(
         <ResponsiveChoropleth
