@@ -1,4 +1,4 @@
-import { Box, Button, IconButton, Typography, useTheme } from "@mui/system";
+import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import {tokens} from "../../theme";
 import {mockTranactions } from "../../data/mocData";
 import Header from "../../components/Header";
@@ -15,8 +15,6 @@ import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 
 
-
-
 const Dashboard = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
@@ -30,6 +28,25 @@ const Dashboard = () => {
        >
       <Header title="DASHBOARD" subtitle="Welcome to your dashboard"/>
       </Box>
+
+      <Box>
+        <Button
+              sx={{ 
+              backgroundColor: colors.blueAccent[700],
+              color: colors.gray[100],
+              fontSize: "14px",
+              fontWeight: "bold",
+              padding: "10px 20px",
+              }}
+              >
+        <DownloadOutlinedIcon
+              sx={{
+              mr: "10px"
+              }}
+              />
+              Download Reports
+          </Button>
+       </Box>
       </Box>
   )
 }
