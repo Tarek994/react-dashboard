@@ -28,7 +28,7 @@ const Dashboard = () => {
        alignItems="center"
        >
       <Header title="DASHBOARD" subtitle="Welcome to your dashboard"/>
-      </Box>
+      
 
       <Box>
         <Button
@@ -47,6 +47,7 @@ const Dashboard = () => {
               />
               Download Reports
           </Button>
+       </Box>
        </Box>
 
        {/* GRID & CHARTS */}
