@@ -229,11 +229,11 @@ const Dashboard = () => {
           
            {/* ROW 3 */}
            <Box
-              gridColumn="span 4"
-              gridRow="span 2"
-              backgroundColor={colors.primary[400]}
-              p="30px"
-              >
+                gridColumn="span 4"
+                gridRow="span 2"
+                backgroundColor={colors.primary[400]}
+                p="30px"
+                >
                 <Typography variant="h5"
                 fontWeight="600">
                   Campaign
@@ -260,6 +260,26 @@ const Dashboard = () => {
                 </Box>
            </Box>
 
+
+           <Box
+                gridColumn="span 4"
+                gridRow="span 2"
+                backgroundColor={colors.primary[400]}
+                
+                >
+                <Typography variant="h5"
+                fontWeight="600"
+                sx={{ p: "30px 30px 0 30px"}}
+                >
+                  Sales Quantity
+                </Typography>
+                <Box
+                height="235px"
+                mt="-20px">
+                <BarChart isDashboard={true}/>
+                </Box>
+           </Box>
+            {/*  */}
         </Box>      
       </Box>
   );
