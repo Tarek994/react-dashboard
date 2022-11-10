@@ -253,8 +253,7 @@ const Dashboard = () => {
                   $48,352 revenue genetated
                 </Typography>
 
-                <Typography variant="h5"
-                fontWeight="600">
+                <Typography >
                   Includes extra misc expenditures and costs
                 </Typography>
 
