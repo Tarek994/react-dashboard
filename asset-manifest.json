@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tarek994.github.io/react-dashboard/static/css/main.9ca5cb07.css",
-    "main.js": "/tarek994.github.io/react-dashboard/static/js/main.f9145284.js",
-    "static/js/787.f04d8c20.chunk.js": "/tarek994.github.io/react-dashboard/static/js/787.f04d8c20.chunk.js",
-    "index.html": "/tarek994.github.io/react-dashboard/index.html",
-    "main.9ca5cb07.css.map": "/tarek994.github.io/react-dashboard/static/css/main.9ca5cb07.css.map",
-    "main.f9145284.js.map": "/tarek994.github.io/react-dashboard/static/js/main.f9145284.js.map",
-    "787.f04d8c20.chunk.js.map": "/tarek994.github.io/react-dashboard/static/js/787.f04d8c20.chunk.js.map"
+    "main.css": "/react-dashboard/static/css/main.9ca5cb07.css",
+    "main.js": "/react-dashboard/static/js/main.b677344c.js",
+    "static/js/787.f04d8c20.chunk.js": "/react-dashboard/static/js/787.f04d8c20.chunk.js",
+    "index.html": "/react-dashboard/index.html",
+    "main.9ca5cb07.css.map": "/react-dashboard/static/css/main.9ca5cb07.css.map",
+    "main.b677344c.js.map": "/react-dashboard/static/js/main.b677344c.js.map",
+    "787.f04d8c20.chunk.js.map": "/react-dashboard/static/js/787.f04d8c20.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ca5cb07.css",
-    "static/js/main.f9145284.js"
+    "static/js/main.b677344c.js"
   ]
 }
