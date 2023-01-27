@@ -30,6 +30,7 @@ function App() {
                     <Topbar/>
                     
                     <Routes>
+                    <Route exact path="/dashboard" element={<Dashboard/>}/>
                       <Route exact path="/" element={<Dashboard/>}/>
                       
 
