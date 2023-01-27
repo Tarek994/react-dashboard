@@ -31,7 +31,7 @@ function App() {
                     
                     <Routes>
                       <Route exact path="/" element={<Dashboard/>}/>
-                      <Route exact path="/dashboard" element={<Dashboard/>}/>
+                      
 
                       <Route path="/team" element={<Team/>}/>
                       <Route path="/contacts" element={<Contacts/>}/>
