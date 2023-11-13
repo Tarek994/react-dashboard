@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-dashboard/static/css/main.9ca5cb07.css",
-    "main.js": "/react-dashboard/static/js/main.62f4d2bc.js",
-    "static/js/787.f04d8c20.chunk.js": "/react-dashboard/static/js/787.f04d8c20.chunk.js",
-    "static/media/user.png": "/react-dashboard/static/media/user.16d4e32ca122e2c539cc.png",
+    "main.css": "/react-dashboard/static/css/main.8f1c8010.css",
+    "main.js": "/react-dashboard/static/js/main.c22111fd.js",
+    "static/js/787.951f8985.chunk.js": "/react-dashboard/static/js/787.951f8985.chunk.js",
+    "static/media/user.jpg": "/react-dashboard/static/media/user.4a9119a47fb9aa5759bc.jpg",
     "index.html": "/react-dashboard/index.html",
-    "main.9ca5cb07.css.map": "/react-dashboard/static/css/main.9ca5cb07.css.map",
-    "main.62f4d2bc.js.map": "/react-dashboard/static/js/main.62f4d2bc.js.map",
-    "787.f04d8c20.chunk.js.map": "/react-dashboard/static/js/787.f04d8c20.chunk.js.map"
+    "main.8f1c8010.css.map": "/react-dashboard/static/css/main.8f1c8010.css.map",
+    "main.c22111fd.js.map": "/react-dashboard/static/js/main.c22111fd.js.map",
+    "787.951f8985.chunk.js.map": "/react-dashboard/static/js/787.951f8985.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ca5cb07.css",
-    "static/js/main.62f4d2bc.js"
+    "static/css/main.8f1c8010.css",
+    "static/js/main.c22111fd.js"
   ]
 }
