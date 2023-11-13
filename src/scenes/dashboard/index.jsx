@@ -83,7 +83,7 @@ const Dashboard = () => {
         gap="10px"
       >
         {/* ROW 1 */}
-        <Box gridColumn="span 3"
+        <Box sx={{ gridColumn: { lg: "span 3", md: "span 3", sm: "span 6", xs: "span 12" } }}
           backgroundColor={colors.primary[400]}
           display="flex"
           alignItems="center"
@@ -104,7 +104,7 @@ const Dashboard = () => {
             } />
         </Box>
 
-        <Box gridColumn="span 3"
+        <Box sx={{ gridColumn: { lg: "span 3", md: "span 3", sm: "span 6", xs: "span 12" } }}
           backgroundColor={colors.primary[400]}
           display="flex"
           alignItems="center"
@@ -126,7 +126,7 @@ const Dashboard = () => {
             } />
         </Box>
 
-        <Box gridColumn="span 3"
+        <Box sx={{ gridColumn: { lg: "span 3", md: "span 3", sm: "span 6", xs: "span 12" } }}
           backgroundColor={colors.primary[400]}
           display="flex"
           alignItems="center"
@@ -147,7 +147,7 @@ const Dashboard = () => {
             } />
         </Box>
 
-        <Box gridColumn="span 3"
+        <Box sx={{ gridColumn: { lg: "span 3", md: "span 3", sm: "span 6", xs: "span 12" } }}
           backgroundColor={colors.primary[400]}
           display="flex"
           alignItems="center"
@@ -172,7 +172,7 @@ const Dashboard = () => {
         {/* ROW 2 */}
 
         <Box
-          gridColumn="span 8"
+          sx={{ gridColumn: { lg: "span 8", md: "span 8", sm: "span 12", xs: "span 12" } }}
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
@@ -204,7 +204,7 @@ const Dashboard = () => {
         {/* TRANSACTIONS */}
 
         <Box
-          gridColumn="span 4"
+          sx={{ gridColumn: { lg: "span 4", md: "span 4", sm: "span 12", xs: "span 12" } }}
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
           overflow="auto"
@@ -261,7 +261,7 @@ const Dashboard = () => {
 
         {/* ROW 3 */}
         <Box
-          gridColumn="span 4"
+          sx={{ gridColumn: { lg: "span 4", md: "span 4", sm: "span 6", xs: "span 12" } }}
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
           p="30px"
@@ -294,7 +294,7 @@ const Dashboard = () => {
 
 
         <Box
-          gridColumn="span 4"
+          sx={{ gridColumn: { lg: "span 4", md: "span 4", sm: "span 6", xs: "span 12" } }}
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
 
@@ -313,7 +313,7 @@ const Dashboard = () => {
         </Box>
 
         <Box
-          gridColumn="span 4"
+          sx={{ gridColumn: { lg: "span 4", md: "span 4", sm: "span 12", xs: "span 12" } }}
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
           p="30px"
@@ -327,7 +327,7 @@ const Dashboard = () => {
           <Box
             height="200px"
           >
-            <GeographyChart isDashboard={true} />
+            <GeographyChart isDashboard={false} />
           </Box>
         </Box>
         {/*  */}
