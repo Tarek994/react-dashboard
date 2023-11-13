@@ -26,11 +26,8 @@ function App() {
           <Sidebar />
           <main className="content">
             <Topbar />
-
             <Routes>
-              <Route exact path="/dashboard" element={<Dashboard />} />
               <Route exact path="/" element={<Dashboard />} />
-
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
