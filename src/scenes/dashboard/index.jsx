@@ -21,11 +21,25 @@ const Dashboard = () => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px">
+    <Box m="20px"
+
+
+    >
       <Box
         display="flex"
-        justifyContent="space-between"
-        alignItems="center"
+        flexDirection={{
+          lg: "row",
+          md: "row",
+          sm: "row",
+          xs: "column"
+        }}
+        justifyContent={{
+          lg: "space-between",
+          md: "space-between",
+          sm: "space-between",
+          xs: "center",
+        }}
+
       >
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
 
@@ -33,12 +47,22 @@ const Dashboard = () => {
         <Box>
           <Button
             sx={{
+              minWidth: {
+                xs: "100%"
+              },
               backgroundColor: colors.blueAccent[700],
               color: colors.gray[100],
-              fontSize: "14px",
+              fontSize: {
+                xs: "12px",
+              },
               fontWeight: "bold",
               padding: "10px 20px",
+              marginBottom: {
+                xs: "1rem",
+                sm: "1rem",
+              },
             }}
+
           >
             <DownloadOutlinedIcon
               sx={{
